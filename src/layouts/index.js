@@ -1,16 +1,18 @@
 import React from 'react'
-import {Link} from 'umi'
+import {NavLink} from 'umi'
+import './index.css'
 
-export default function Layout(props) {
+export default function layout(props) {
   return (
     <div>
-      <header>
-        <Link to={'/sub'}>sub页面</Link>
-        <Link to={'/sub/a'}>sub/a页面</Link>
-      </header>
-      <div>
-        {props.children}
-      </div>
+        <header>
+            <NavLink exact to="/">首页</NavLink>
+            <NavLink exact to="/welcome">欢迎页</NavLink>
+            <NavLink exact to="/login">登录页</NavLink>
+        </header>
+        <main className='main'>
+            {props.children}
+        </main>
     </div>
   )
 }

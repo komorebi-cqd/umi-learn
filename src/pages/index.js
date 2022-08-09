@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function App() {
+export default function index(props) {
+    console.log(props);
   return (
-    <div>hello world </div>
+    <div>首页</div>
   )
 }
