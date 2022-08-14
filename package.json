@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@umijs/plugin-dva": "^0.13.2",
     "umi": "^3"
   },
   "name": "umi-learn",
